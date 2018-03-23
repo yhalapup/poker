@@ -1,5 +1,21 @@
-hooks:
-  pre_setup: gem install minitest
-tests:
-  - ruby poker_test.rb
-script: pwd
+plan:
+- first
+- second
+
+profiles:
+  first:
+    environment:
+      MY_PROFILE: "first"
+    script: bin/test
+    tests:
+      - bin/first
+    profile_config:
+      advance_on: 'always'
+  second:
+    environment:
+      MY_PROFILE: "second"
+    script: bin/test
+    tests:
+      - bin/second
+    profile_config:
+      advance_on: 'always'

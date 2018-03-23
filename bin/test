@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo '========= Git Version ============'
+git --version
+echo '=========    Env      ============'
+env
+echo '=========    FS       ============'
+ls -l /home/*
+echo '=========    Done     ============'
