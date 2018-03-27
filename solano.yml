@@ -20,7 +20,3 @@ profiles:
     profile_config:
       advance_on: 'always'
 
-profile_cache:
-- first_dir
-- second_dir
-- first_file
