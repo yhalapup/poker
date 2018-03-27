@@ -15,3 +15,11 @@ echo "Some text here." > ~/third_dir/my_file
 echo '=========    CREATE files in home'
 echo "Some text here." > ~/first_file
 echo "Some another text here." > ~/second_file
+echo '=========    SHOW HOME DIR again'
+ls -l ~/
+echo '=========    SHOW HOME first_dir DIR'
+ls -l ~/first_dir
+echo '=========    SHOW HOME second_dir DIR'
+ls -l ~/second_dir
+echo '=========    SHOW HOME third_dir DIR'
+ls -l ~/third_dir
