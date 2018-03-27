@@ -6,7 +6,7 @@ profiles:
   first:
     environment:
       MY_PROFILE: "first"
-    script: bin/test
+    script: bin/first
     tests:
       - bin/first
     profile_config:
@@ -14,7 +14,7 @@ profiles:
   second:
     environment:
       MY_PROFILE: "second"
-    script: bin/test
+    script: bin/first
     tests:
       - bin/second
     profile_config:
