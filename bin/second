@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo '=========    SHOW HOME DIR'
+ls -l ~
+echo '=========    SHOW HOME first_dir DIR'
+ls -l ~/first_dir
+echo '=========    SHOW HOME second_dir DIR'
+ls -l ~/second_dir
