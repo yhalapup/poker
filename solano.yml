@@ -14,7 +14,7 @@ profiles:
   second:
     environment:
       MY_PROFILE: "second"
-    script: bin/first
+    script: bin/second
     tests:
       - bin/second
     profile_config:
