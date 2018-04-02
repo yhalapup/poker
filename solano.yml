@@ -11,6 +11,8 @@ profiles:
       - bin/first
     profile_config:
       advance_on: 'always'
+    output:
+      - scm_artifact.tar
   second:
     environment:
       MY_PROFILE: "second"
@@ -19,6 +21,10 @@ profiles:
       - bin/second
     profile_config:
       advance_on: 'always'
+    input:
+      - scm_artifact.tar
+    output:
+      - compiled.jar
 
 profile_cache:
 - first_dir
