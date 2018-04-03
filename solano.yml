@@ -1,32 +1,26 @@
 plan:
+- fetch
 - first
 - second
 
 profiles:
-  first:
-    environment:
-      MY_PROFILE: "first"
-    script: bin/first
-    tests:
-      - bin/first
-    profile_config:
-      advance_on: 'always'
+  fetch:
+    script: bin/fetch
     output:
       - scm_artifact.tar
+      - fetch_compiled
+      - fetch_compiled_dir
+  first:
+    input:
+      - scm_artifact.tar
+      - fetch_compiled_dir
+    script: bin/first
+    output:
+      - first_compiled
   second:
-    environment:
-      MY_PROFILE: "second"
     script: bin/second
     tests:
       - bin/second
-    profile_config:
-      advance_on: 'always'
     input:
-      - scm_artifact.tar
-    output:
-      - compiled.jar
-
-profile_cache:
-- first_dir
-- second_dir
-- first_file
+      - fetch_compiled
+      - first_compiled
