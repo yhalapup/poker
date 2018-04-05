@@ -11,7 +11,7 @@ echo '=========    CREATE scm_artifact DIR, nested files and archive them'
 mkdir ~/scm_artifact
 echo "Some text here." > ~/scm_artifact/my_file
 echo "Some another text here." > ~/scm_artifact/my_second_file
-tar -cf scm_artifact.tar ~/scm_artifact
+tar -cf ~/scm_artifact.tar ~/scm_artifact
 echo '=========    SHOW HOME DIR again'
 ls -l ~/
 echo '=========    SHOW HOME fetch_compiled_dir DIR'
