@@ -4,6 +4,6 @@ ls -l ~
 echo '=========    SHOW HOME fetch_compiled_dir DIR'
 ls -l ~/fetch_compiled_dir
 echo '=========    CREATE first_compiled in home'
-echo "Some text here." > ~/first_compiled
+echo "Some text first compiled  here." > ~/first_compiled
 echo '=========    SHOW HOME DIR again'
 ls -l ~/
