@@ -24,3 +24,4 @@ profiles:
     input:
       - fetch_compiled
       - first_compiled
+      - incorect_session_artifact
