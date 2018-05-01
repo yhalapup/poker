@@ -2,3 +2,9 @@ script: |
   bin/fetch
   bin/first
   bin/second
+
+
+hooks:
+  pre_setup: |
+    echo '1 pre_setup'
+    echo '2 pre_setup'
