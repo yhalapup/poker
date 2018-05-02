@@ -1,4 +1,5 @@
 script: |
+  set -e
   bin/fetch
   bin/incorrect_name
   bin/first
