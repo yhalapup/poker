@@ -1,5 +1,1 @@
-script: |
-  ./bin/fetch
-
-environment:
-  CHECK_ENV: 'TEST ENV VARIABLE'
+script: bin/fetch & bin/first & bin/second
