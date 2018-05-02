@@ -1,1 +1,3 @@
 echo '=========    SHOW fetch'
+sleep 5
+echo '=========    SHOW fetch END'
