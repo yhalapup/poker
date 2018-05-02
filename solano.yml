@@ -1,5 +1,12 @@
-script: |
-  bin/fetch
-  bin/first
+plan:
+- fetch
+- first
 
-timeout: 8
+profiles:
+  fetch:
+    script: |
+      bin/fetch
+      bin/first
+    timeout: 8
+  first:
+    script: bin/first
