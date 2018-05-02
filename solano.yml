@@ -1,1 +1,4 @@
-script: bin/fetch & bin/first & bin/second
+script: |
+  bin/fetch
+  bin/incorrect_name
+  bin/first
