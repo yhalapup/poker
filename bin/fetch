@@ -1,3 +1,11 @@
 echo '=========    SHOW fetch'
-sleep 2
+sleep 10
+echo '=========    SHOW fetch1'
+sleep 10
+echo '=========    SHOW fetch2'
+sleep 10
+echo '=========    SHOW fetch3'
+sleep 10
+echo '=========    SHOW fetch4'
+sleep 10
 echo '=========    SHOW fetch END'
