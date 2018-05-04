@@ -1,0 +1,21 @@
+---
+pipeline:
+  fetch:
+    - unit: deploy
+    - build
+edges:
+  build: deploy
+steps:
+  fetch:
+    script: ./fetch_and_tar_repo.sh
+    output: scm_artifact.tar
+  unit_test:
+    input: scm_artifact.tar
+    script: ./run_unit_tests.sh
+  build:
+    input: scm_artifact.tar
+    script: ./build_webpage.sh
+    output: build_artifact.tar
+  deploy:
+    input: build_artifact.tar
+    script: ./deploy_to_docker_hub.sh
