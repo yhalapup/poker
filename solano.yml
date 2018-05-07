@@ -19,4 +19,5 @@ profiles:
   deploy:
     input: build_artifact.tar
     script: ./deploy_to_docker_hub.sh
-script: ./fetch_and_tar_repo.sh
+  default:
+    script: ./fetch_and_tar_repo.sh
