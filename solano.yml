@@ -4,7 +4,7 @@ pipeline:
     - unit_test: deploy
     - build
 edges:
-  build: deploy
+  - build: deploy
 profiles:
   fetch:
     script: ./scripts/fetch_and_tar_repo.sh
