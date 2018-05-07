@@ -7,17 +7,17 @@ edges:
   build: deploy
 profiles:
   fetch:
-    script: ./fetch_and_tar_repo.sh
+    script: ./scripts/fetch_and_tar_repo.sh
     output: scm_artifact.tar
   unit_test:
     input: scm_artifact.tar
-    script: ./run_unit_tests.sh
+    script: ./scripts/run_unit_tests.sh
   build:
     input: scm_artifact.tar
-    script: ./build_webpage.sh
+    script: ./scripts/build_webpage.sh
     output: build_artifact.tar
   deploy:
     input: build_artifact.tar
-    script: ./deploy_to_docker_hub.sh
+    script: ./scripts/deploy_to_docker_hub.sh
   default:
-    script: ./fetch_and_tar_repo.sh
+    script: ./scripts/fetch_and_tar_repo.sh
