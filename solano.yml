@@ -5,7 +5,7 @@ pipeline:
     - build
 edges:
   build: deploy
-steps:
+profiles:
   fetch:
     script: ./fetch_and_tar_repo.sh
     output: scm_artifact.tar
