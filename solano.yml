@@ -1,7 +1,7 @@
 ---
 pipeline:
   fetch:
-    - unit: deploy
+    - unit_test: deploy
     - build
 edges:
   build: deploy
