@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-mkdir scm_artifact
 
-touch ./scm_artifact/file1 ./scm_artifact/file2 ./scm_artifact/file3 ./scm_artifact/file4
+mkdir ~/scm_artifact
 
-tar -cvf scm_artifact.tar scm_artifact
-chmod +x scm_artifact.tar
+touch ~/scm_artifact/file1 ~/scm_artifact/file2 ~/scm_artifact/file3 ~/scm_artifact/file4
 
-ls -la
+tar -cvf ~/scm_artifact.tar ~/scm_artifact
+chmod +x ~/scm_artifact.tar
+
+ls -la ~/
