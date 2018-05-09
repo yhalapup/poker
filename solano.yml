@@ -9,7 +9,8 @@ profiles:
   fetch:
     script: ./scripts/fetch_and_tar_repo.sh
     output: 
-      - scm_artifact.tar
+      - ./scm_artifact/file1
+      - ./scm_artifact.tar
   unit_test:
     input: 
       - scm_artifact.tar
