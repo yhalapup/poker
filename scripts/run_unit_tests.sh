@@ -2,9 +2,7 @@
 
 tar -xvf ~/scm_artifact.tar -C ~/
 
-ls -la ~/
-
-cd ~/scm_artifact && ls -la
+ls -l ~/
 
 echo "Running Unit Tests"
 
