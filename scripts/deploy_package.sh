@@ -1,8 +1,8 @@
 #!/bin/bash
 
-tar -xvf build_artifact.tar
+tar -xvf ~/build_artifact.tar
 
-ls -la
+ls -la ~/
 
 echo "Deploying Package"
 
