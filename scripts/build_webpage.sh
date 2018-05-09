@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tar -xvf ~/scm_artifact.tar -C ~/scm_artifact
+tar -xvf ~/scm_artifact.tar -C ~/
 
 ls -l ~/scm_artifact
 
