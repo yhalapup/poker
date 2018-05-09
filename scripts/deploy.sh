@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source scripts/functions.sh
+
 cd ~
 
 tar -xvf build_artifact.tar
