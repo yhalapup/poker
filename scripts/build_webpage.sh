@@ -1,8 +1,8 @@
 #!/bin/bash
 
-tar -xvf ~/scm_artifact.tar ~/
+tar -xvf ~/scm_artifact.tar -C ~/
 
-ls -la ~/
+ls -la
 
 cd ~/scm_artifact && ls -la ~/
 
@@ -12,4 +12,4 @@ touch ~/scm_artifact/webpage.html
 
 tar -cvf ~/build_artifact.tar ~/scm_artifact
 
-ls -la
+ls -la ~/
