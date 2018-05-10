@@ -38,7 +38,6 @@ function fetch_current_session_info {
     2>${CURRENT_SESSION_FILE}-stderr.txt; then
       echo "ERROR: There was an error querying the API" | tee -a $ARTIFACT_DIR/errors.txt
       echo "       see $(basename ${CURRENT_SESSION_FILE}-stderr.txt)" | tee -a $ARTIFACT_DIR/errors.txt
-      cat ${CURRENT_SESSION_FILE}-stderr.txt
       return 3
   fi
   # Extract info from json results

@@ -44,6 +44,5 @@ if ! grep '<div id="seconds_div">' $HTML_FILE | grep "$SECONDS" > /dev/null 2>&1
 fi
 
 tar -cvf build_artifact.tar scm_artifact
-ls -l
 
 exit $exit_code
