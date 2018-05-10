@@ -12,12 +12,13 @@ cat > scm_artifact/index.html <<EOF
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Canary</title>
+  <title>Status Canary</title>
   <style>
     body {background-color: 000000; margin: 0px;}
     #canary {display: block; width:100%;}
     #text_div {position: absolute; right: 20px; top: 20px;}
     #text_div div {color: #FFFFFF; font-weight: bold; font-size: x-large;}
+    #text_div a {color: #FFFFFF;}
   </style>
 </head>
 <body>
@@ -28,6 +29,18 @@ cat > scm_artifact/index.html <<EOF
   <div id="day_div">day not set</div>
   <div id="time_div">time not set</div>
   <div id="seconds_div">seconds not set</div>
+  <div id="divider" />
+  <div id="repo_info">repo info not set</div>
+  <div id="prev_sess_info">
+    <div id="prev_sess_info_header">Previous Sessions:</div>
+    previous sessions not set
+  </div>
+  <div id="errors">
+    errors not set
+  </div>
+  <div id="build_info_html">build info not set</div>
+  <div id="previous_sessions_html">previous sessions not set</div>
+  <div id="error_html">error not set</div>
 </div>
 </body>
 </html>
