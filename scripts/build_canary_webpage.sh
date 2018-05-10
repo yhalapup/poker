@@ -3,6 +3,9 @@ set -e # Exit on error
 
 cd ~
 
+tar -xvf scm_artifact.tar
+ls -l
+
 # If an argument was passed, assume it was a timestamp to be used
 if [ ! -z "$1" ]; then
   DATESTRING="-d @${1}"
@@ -20,5 +23,3 @@ sed "s/day not set/$DAY/g" scm_artifact/index.html
 sed "s/time not set/$TIME/g" scm_artifact/index.html
 sed "s/seconds not set/$SECONDS/g" scm_artifact/index.html
 
-tar -cvf build_artifact.tar scm_artifact
-ls -l
