@@ -23,3 +23,6 @@ sed "s/day not set/$DAY/g" scm_artifact/index.html
 sed "s/time not set/$TIME/g" scm_artifact/index.html
 sed "s/seconds not set/$SECONDS/g" scm_artifact/index.html
 
+cat scm_artifact/index.html
+
+exit 1
