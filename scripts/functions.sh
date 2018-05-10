@@ -21,7 +21,7 @@ function require_vars {
 
 function fetch_current_session_info {
   # The presenece of these environment variables presumes this is a CI build
-  if ! require_vars TDDIUM TDDIUM_SESSION_ID; then
+  if ! require_vars TDDIUM_SESSION_ID; then
     echo 'Not generated from CI build' | tee -a $ARTIFACT_DIR/errors.txt
     return 1
   fi
