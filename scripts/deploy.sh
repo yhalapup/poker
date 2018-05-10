@@ -31,7 +31,7 @@ if sudo docker images -a | awk '{print $1}' | grep $DOCKER_IMAGE > /dev/null 2>&
 fi
 
 # Build docker image
-sudo docker build -t ${DOCKER_IMAGE}:latest -t ${DOCKER_IMAGE}:$TIMESTAMP .
+sudo docker build -t ${DOCKER_IMAGE}:latest .
 
 # Push docker image
 if ! require_vars DOCKER_USERNAME DOCKER_PASSWORD; then
