@@ -2,7 +2,7 @@
 
 set -o errexit -o pipefail # Exit on error
 
-source functions.sh
+source scripts/functions.sh
 
 # Set the timestamp for building/testing the canary page
 TIMESTAMP=`date +%s`
