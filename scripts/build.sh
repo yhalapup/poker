@@ -8,7 +8,7 @@ source scripts/functions.sh
 TIMESTAMP=`date +%s`
 
 # Build the canary page
-./scripts/build_canary_web_page.sh $TIMESTAMP
+./scripts/build_canary_webpage.sh $TIMESTAMP
 
 # Ensure the canary page has the correct values
-./scripts/test_canary_web_page.sh $TIMESTAMP
+./scripts/test_canary_webpage.sh $TIMESTAMP
