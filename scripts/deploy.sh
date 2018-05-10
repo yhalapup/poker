@@ -46,8 +46,8 @@ pip install awscli --upgrade --user
 $(aws ecr get-login --no-include-email --region us-east-1)
 
 sudo docker build -t ${DOCKER_IMAGE} .
-sudo docker tag ${DOCKER_IMAGE}:latest ${ECR_REPO}/${DOCKER_IMAGE}:latest
-sudo docker push ${ECR_REPO}/${DOCKER_IMAGE}:latest
+sudo docker tag ${DOCKER_IMAGE}:latest ${AWS_ECR_REPO}/${DOCKER_IMAGE}:latest
+sudo docker push ${AWS_ECR_REPO}/${DOCKER_IMAGE}:latest
 
 echo "----------------------------"
 echo "Success"
