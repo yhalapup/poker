@@ -1,7 +1,7 @@
 #!/bin/bash
 
+set -o errexit -o pipefail # Exit on error
 source scripts/functions.sh
-
 cd ~
 
 tar -xvf build_artifact.tar
@@ -15,6 +15,8 @@ echo "----------------------------"
 if ! which docker > /dev/null 2>&1; then
   install_docker
 fi
+
+sudo service docker start
 
 # Remove any previously built images
 if ! require_vars DOCKER_IMAGE; then
