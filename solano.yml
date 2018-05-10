@@ -25,7 +25,7 @@ profiles:
       - build_artifact.tar
     script: ./scripts/deploy.sh
     environment:
-      AWS_ECR_REPO: 418216297797.dkr.ecr.us-east-1.amazonaws.com
+      AWS_ECR_REPO: 293104559757.dkr.ecr.us-east-1.amazonaws.com
       DOCKER_IMAGE: predix-ci
       # SOLANO_API_KEY:  set in Predix CI UI
       # AWS_SECRET_ACCESS_KEY:  set in Predix CI UI
