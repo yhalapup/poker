@@ -32,22 +32,17 @@ if sudo docker images -a | awk '{print $1}' | grep $DOCKER_IMAGE > /dev/null 2>&
   done
 fi
 
+# Build docker image
+sudo docker build -t ${DOCKER_IMAGE}:latest .
 
 # Push docker image
-if ! require_vars AWS_SECRET_ACCESS_KEY AWS_ACCESS_KEY_ID AWS_ECR_REPO DOCKER_IMAGE; then
-
+if ! require_vars DOCKER_USERNAME DOCKER_PASSWORD; then
   echo "Set required variables"
   exit 2
 fi
 
-# Install/Upgrade AWS CLI
-pip install awscli --upgrade --user
-
-$(aws ecr get-login --no-include-email --region us-east-1)
-
-sudo docker build -t ${DOCKER_IMAGE} .
-sudo docker tag ${DOCKER_IMAGE}:latest ${AWS_ECR_REPO}/${DOCKER_IMAGE}:latest
-sudo docker push ${AWS_ECR_REPO}/${DOCKER_IMAGE}:latest
+echo $DOCKER_PASSWORD | sudo docker login --username=${DOCKER_USERNAME} --password-stdin
+sudo docker push $DOCKER_IMAGE
 
 echo "----------------------------"
 echo "Success"
