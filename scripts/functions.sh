@@ -32,7 +32,7 @@ function fetch_current_session_info {
   # Store current session info for 'jq' parsing
   CURRENT_SESSION_FILE=${ARTIFACT_DIR}/current_session.json
   if ! curl -H "Content-type: application/json" -H "${HEADER_CLIENT_NAME}: ${HEADER_CLIENT_VALUE}" -H "${HEADER_API_KEY_NAME}: ${SOLANO_API_KEY}" \
-    --silent --show-error \
+    --silent --show-error -k \
     -o $CURRENT_SESSION_FILE \
     ${SOLANO_API_URL}/sessions/${TDDIUM_SESSION_ID} \
     2>${CURRENT_SESSION_FILE}-stderr.txt; then
@@ -78,7 +78,7 @@ function fetch_previous_sessions_info {
   # Store previous session info for 'jq' parsing
   PREVIOUS_SESSIONS_FILE=${ARTIFACT_DIR}/previous_sessions.json
   if ! curl -H "Content-type: application/json" -H "${HEADER_CLIENT_NAME}: ${HEADER_CLIENT_VALUE}" -H "${HEADER_API_KEY_NAME}: ${SOLANO_API_KEY}" \
-    --silent --show-error \
+    --silent --show-error -k \
     -o $PREVIOUS_SESSIONS_FILE \
     ${SOLANO_API_URL}/sessions?suite_id={$BRANCH_ID}\&limit=5 \
     2>${PREVIOUS_SESSIONS_FILE}-stderr.txt; then
