@@ -35,12 +35,7 @@ cat > scm_artifact/index.html <<EOF
     <div id="prev_sess_info_header">Previous Sessions:</div>
     previous sessions not set
   </div>
-  <div id="errors">
-    errors not set
-  </div>
-  <div id="build_info_html">build info not set</div>
-  <div id="previous_sessions_html">previous sessions not set</div>
-  <div id="error_html">error not set</div>
+  <div id="errors">errors not set</div>
 </div>
 </body>
 </html>

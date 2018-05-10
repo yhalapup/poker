@@ -42,6 +42,6 @@ if [ -f $ARTIFACT_DIR/errors.txt ]; then
   done
 fi
 
-sed -i "s/build info not set/$BUILD_INFO_HTML/g" scm_artifact/index.html
-sed -i "s/previus sessions not set/$EXTRA_HTML/g" scm_artifact/index.html
-sed -i "s/error not set/$ERROR_HTML/g" scm_artifact/index.html
+sed -i "s/repo info not set/$BUILD_INFO_HTML/g" scm_artifact/index.html
+sed -i "s/previous sessions not set/$EXTRA_HTML/g" scm_artifact/index.html
+sed -i "s/errors not set/$ERROR_HTML/g" scm_artifact/index.html
