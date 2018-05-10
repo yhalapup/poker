@@ -24,3 +24,5 @@ profiles:
     input: 
       - build_artifact.tar
     script: ./scripts/deploy.sh
+  default:
+    script: dev/null
