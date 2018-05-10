@@ -40,6 +40,9 @@ if ! require_vars AWS_SECRET_ACCESS_KEY AWS_ACCESS_KEY_ID AWS_ECR_REPO DOCKER_IM
   exit 2
 fi
 
+# Install/Upgrade AWS CLI
+pip install awscli --upgrade --user
+
 $(aws ecr get-login --no-include-email --region us-east-1)
 
 sudo docker build -t ${DOCKER_IMAGE} .
