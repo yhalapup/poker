@@ -2,10 +2,16 @@
 
 set -o errexit -o pipefail # Exit on error
 
+# Constants
+HEADER_API_KEY_NAME=X-Tddium-Api-Key
+HEADER_CLIENT_NAME=X-Tddium-Client-Version
+HEADER_CLIENT_VALUE=tddium-client_0.4.4
+SOLANO_API_URL=https://nutro-sandbox.slno.net/1
+
 source scripts/functions.sh
 
 # Set the timestamp for building/testing the canary page
-if require_vars TDDIUM TDDIUM_SESSION_ID; then
+if require_vars TDDIUM_SESSION_ID; then
   export ARTIFACT_DIR=${HOME}/results/${TDDIUM_SESSION_ID}/session
 else
   export ARTIFACT_DIR=`mktemp -d -t canary-artifacts.XXXXXXX`
