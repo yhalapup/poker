@@ -27,6 +27,5 @@ profiles:
     environment:
       - DOCKER_IMAGE: predixci/canary
       - DOCKER_USERNAME: predixci
-      # - DOCKER_PASSWORD: set this in the Predix CI UI
   default:
     script: dev/null
