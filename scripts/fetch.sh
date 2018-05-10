@@ -22,7 +22,7 @@ cat > scm_artifact/index.html <<EOF
   </style>
 </head>
 <body>
-<img id="canary" title="canary" src="nature-branch-bird-wildlife-beak-yellow-700939-pxhere.com.jpg" />
+<img id="canary" title="canary" src="https://github.com/IsaacChapman/docker-canary/raw/b6ccb187d7cb5f701363efda1dc6558df8a3db9c/web/nature-branch-bird-wildlife-beak-yellow-700939-pxhere.com.jpg" />
 <div id="text_div">
   <div id="year_div">year not set</div>
   <div id="month_div">month not set</div>
@@ -40,9 +40,6 @@ cat > scm_artifact/index.html <<EOF
 </body>
 </html>
 EOF
-
-# Fetch image for canary website
-curl -o scm_artifact/canary.jpg https://github.com/IsaacChapman/docker-canary/raw/b6ccb187d7cb5f701363efda1dc6558df8a3db9c/web/nature-branch-bird-wildlife-beak-yellow-700939-pxhere.com.jpg
 
 echo "----------------------------"
 echo "Repository Fetched"
