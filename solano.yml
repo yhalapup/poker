@@ -25,7 +25,8 @@ profiles:
       - build_artifact.tar
     script: ./scripts/deploy.sh
     environment:
-      - DOCKER_IMAGE: predixci/canary
-      - DOCKER_USERNAME: predixci
+      DOCKER_IMAGE: predixci/canary
+      DOCKER_USERNAME: predixci
+      # DOCKER_PASSWORD: set in Predix CI UI
   default:
     script: dev/null
