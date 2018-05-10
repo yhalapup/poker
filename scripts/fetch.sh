@@ -34,7 +34,7 @@ cat > scm_artifact/index.html <<EOF
 EOF
 
 # Fetch image for canary website
-curl -o canary.jpg https://github.com/IsaacChapman/docker-canary/raw/b6ccb187d7cb5f701363efda1dc6558df8a3db9c/web/nature-branch-bird-wildlife-beak-yellow-700939-pxhere.com.jpg
+curl -o scm_artifact/canary.jpg https://github.com/IsaacChapman/docker-canary/raw/b6ccb187d7cb5f701363efda1dc6558df8a3db9c/web/nature-branch-bird-wildlife-beak-yellow-700939-pxhere.com.jpg
 
 echo "----------------------------"
 echo "Repository Fetched"
