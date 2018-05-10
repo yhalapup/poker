@@ -2,6 +2,8 @@
 
 set -o errexit -o pipefail # Exit on error
 source scripts/functions.sh
+
+cp Dockerfile ~/
 cd ~
 
 tar -xvf build_artifact.tar
