@@ -2,25 +2,23 @@ plan:
 - fetch
 - first
 - second
+- last
 
 profiles:
   fetch:
     script: bin/fetch
-    output:
-      - scm_artifact.tar
-      - fetch_compiled
-      - fetch_compiled_dir
   first:
-    input:
-      - scm_artifact.tar
-      - fetch_compiled_dir
     script: bin/first
-    output:
-      - first_compiled
   second:
     script: bin/second
-    tests:
-      - bin/second
-    input:
-      - fetch_compiled
-      - first_compiled
+  last:
+    script: bin/last
+
+
+pipeline:
+  fetch:
+   - first: last
+   - second
+
+edges:
+  - second: last
