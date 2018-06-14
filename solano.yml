@@ -9,16 +9,20 @@ plan:
 
 profiles:
   fetch:
-    - ruby poker_test.rb
+    tests:
+      - ruby poker_test.rb
     #script: bin/fetch
   first:
-    - ruby poker_test.rb
+    tests:
+      - ruby poker_test.rb
     #script: bin/first
   second:
-    - ruby poker_test.rb
+    tests:
+      - ruby poker_test.rb
     #script: bin/second
   last:
-    - ruby poker_test.rb
+    tests:
+      - ruby poker_test.rb
     #script: bin/last
 
 
