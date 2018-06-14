@@ -1,3 +1,6 @@
+hooks:
+  pre_setup: gem install minitest
+
 plan:
 - fetch
 - first
@@ -6,13 +9,17 @@ plan:
 
 profiles:
   fetch:
-    script: bin/fetch
+    - ruby poker_test.rb
+    #script: bin/fetch
   first:
-    script: bin/first
+    - ruby poker_test.rb
+    #script: bin/first
   second:
-    script: bin/second
+    - ruby poker_test.rb
+    #script: bin/second
   last:
-    script: bin/last
+    - ruby poker_test.rb
+    #script: bin/last
 
 
 pipeline:
