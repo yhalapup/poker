@@ -1,3 +1,4 @@
 echo '=========    SHOW FIRST'
-sleep 5
-echo '=========    SHOW FIRST END'
+echo '=========    SHOW ENVIRONMENT VARIABLES:'
+printenv
+
