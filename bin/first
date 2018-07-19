@@ -1,9 +1,7 @@
 echo '=========    SHOW FIRST'
 echo '=========    SHOW ENVIRONMENT VARIABLES:'
-printenv
-# set_pipeline_var.sh T1 12345
-echo '=========    which set_pipeline_var.sh:'
-which set_pipeline_var.sh
-echo '=========    ls ~:'
-ls -l
+set_pipeline_var T1 12345
+echo '=========    ls /tmp'
+ls -l /tmp
+
 
