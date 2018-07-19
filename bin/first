@@ -1,4 +1,5 @@
 echo '=========    SHOW FIRST'
 echo '=========    SHOW ENVIRONMENT VARIABLES:'
 printenv
+set_pipeline_var.sh T1 12345
 
