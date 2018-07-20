@@ -1,18 +1,5 @@
 #!/usr/bin/env bash
-echo '=========    SHOW HOME DIR'
-ls -l ~
-echo '=========    CREATE fetch_compiled_dir DIR and nested files'
-mkdir ~/fetch_compiled_dir
-echo "Some text here." > ~/fetch_compiled_dir/myfile
-echo "Some another text here." > ~/fetch_compiled_dir/my_second_file
-echo '=========    CREATE fetch_compiled in home'
-echo "Some text here." > ~/fetch_compiled
-echo '=========    CREATE scm_artifact DIR, nested files and archive them'
-mkdir ~/scm_artifact
-echo "Some text here." > ~/scm_artifact/my_file
-echo "Some another text here." > ~/scm_artifact/my_second_file
-tar -cf ~/scm_artifact.tar ~/scm_artifact
-echo '=========    SHOW HOME DIR again'
-ls -l ~/
-echo '=========    SHOW HOME fetch_compiled_dir DIR'
-ls -l ~/fetch_compiled_dir
+
+echo '=========    CREATE ENVIRONMENT VARIABLES:'
+echo "ABC=test" >> /tmp/env
+echo "ABC_TEST=test2" >> /tmp/env
