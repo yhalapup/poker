@@ -7,12 +7,12 @@ profiles:
     script: bin/fetch
     output_env:
       - ABC
-      - ABC_TES
+      - ABC_TEST
 
   first:
     input_env:
       - ABC
-      - ABC_TES
+      - ABC_TEST
     script: bin/first
 
   second:
