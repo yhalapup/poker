@@ -1,0 +1,7 @@
+echo '=========    SHOW FIRST'
+echo '=========    SHOW ENVIRONMENT VARIABLES:'
+set_pipeline_var T1 12345
+echo '=========    ls /tmp'
+ls -l /tmp
+
+
