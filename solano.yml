@@ -1,24 +1,13 @@
 plan:
-- fetch
 - first
+- second
 
 steps:
   fetch:
     script: bin/fetch
-    output_env:
-      - ABC
-      - ABC_TEST
 
   first:
-    input_env:
-      - ABC
-      - ABC_TEST
     script: bin/first
 
   second:
     script: bin/second
-    tests:
-      - bin/second
-    input:
-      - fetch_compiled
-      - first_compiled
