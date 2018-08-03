@@ -2,7 +2,7 @@ plan:
 - fetch
 - first
 
-profiles:
+steps:
   fetch:
     script: bin/fetch
     output_env:
