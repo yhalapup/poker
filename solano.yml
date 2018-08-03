@@ -8,6 +8,12 @@ steps:
 
   first:
     script: bin/first
+    output:
+      - scm_artifact.tar
+      - fetch_compiled
 
   second:
     script: bin/second
+    input:
+      - scm_artifact.tar
+      - fetch_compiled
