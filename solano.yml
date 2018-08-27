@@ -1,1 +1,17 @@
-script: bin/first
+profiles:
+  default:
+    input:
+    - build-artifacts-name
+    script: bin/first
+    output:
+    - build-artifacts-name
+  second:
+    input:
+    - build-artifacts-name
+    script: bin/first
+    output:
+    - build-artifacts-name
+  third:
+    input:
+    - build-artifacts-name
+    script: bin/first
