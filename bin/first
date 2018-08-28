@@ -3,6 +3,9 @@
 echo '=========    SHOW PWD:'
 pwd
 
+echo '=========    SHOW DIR'
+ls -l
+
 echo '=========    SHOW HOME DIR'
 ls -l ~
 
