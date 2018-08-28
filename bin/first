@@ -1,14 +1,3 @@
 echo '=========    SHOW FIRST'
-echo '=========    SHOW ENVIRONMENT VARIABLES:'
-sleep 10
-echo 'sleep 10'
-sleep 10
-echo 'sleep 20'
-sleep 10
-echo 'sleep 30'
-sleep 10
-echo 'sleep 40'
-sleep 10
-echo 'sleep 50'
-
-
+echo '=========    SHOW CURRENT PATH:'
+pwd
