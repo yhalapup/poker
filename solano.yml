@@ -1,1 +1,2 @@
 script: bin/first
+working_directory: /home/abc
