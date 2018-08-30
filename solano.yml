@@ -2,6 +2,8 @@ plan:
 - first
 - second
 
+working_directory: /home/abc
+
 steps:
   fetch:
     script: bin/fetch
@@ -13,6 +15,7 @@ steps:
       - fetch_compiled
 
   second:
+    working_directory: /home/abc_second
     script: bin/second
     input:
       - scm_artifact.tar
