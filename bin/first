@@ -4,4 +4,4 @@ echo '=========    SHOW CURRENT PATH:'
 pwd
 
 echo '=========    SHOW CURRENT DIR:'
-ls -l
+ls -la
