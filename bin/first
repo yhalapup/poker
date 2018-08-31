@@ -1,3 +1,7 @@
-echo '=========    SHOW FIRST'
+echo '=========    FIRST'
+
 echo '=========    SHOW CURRENT PATH:'
 pwd
+
+echo '=========    SHOW CURRENT DIR:'
+ls -l
