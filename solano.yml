@@ -20,3 +20,7 @@ steps:
     input:
       - scm_artifact.tar
       - fetch_compiled
+
+    collect:
+      repo:
+      - solano.yml
