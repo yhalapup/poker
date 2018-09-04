@@ -20,6 +20,9 @@ steps:
     input:
       - scm_artifact.tar
       - fetch_compiled
+    output:
+    - fetch_compiled_second
+
 
     collect:
       repo:
