@@ -1,4 +1,3 @@
 script: bin/first
-working_directory: /home/abc
 output:
 - fetch_compiled_first
