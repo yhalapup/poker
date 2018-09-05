@@ -5,3 +5,9 @@ pwd
 
 echo '=========    SHOW CURRENT DIR:'
 ls -la
+
+echo '=========    CREATE fetch_compiled_first in home'
+echo "Some text here for fetch compiled second." > ~/fetch_compiled_first
+
+echo '=========    SHOW HOME DIR'
+ls -l ~
