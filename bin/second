@@ -6,11 +6,11 @@ pwd
 echo '=========    SHOW DIR'
 ls -l
 
-echo '=========    SHOW HOME DIR'
-ls -l ~
+echo '=========    SHOW WORKING DIR'
+ls -l .
 
-echo '=========    CREATE fetch_compiled in home'
-echo "Some text here for fetch compiled second." > ~/fetch_compiled_second
+echo '=========    CREATE fetch_compiled in working dir'
+echo "Some text here for fetch compiled second." > fetch_compiled_second
 
-echo '=========    SHOW HOME DIR'
-ls -l ~
+echo '=========    SHOW WORKING DIR'
+ls -l .
