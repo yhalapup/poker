@@ -3,6 +3,8 @@ plan:
 - second
 
 #working_directory: /home/abc
+user: john
+uid: 3456
 
 steps:
   fetch:
@@ -16,6 +18,7 @@ steps:
 
   second:
     #working_directory: /home/abc_second
+    uid: 3457
     script: bin/second
     input:
       - scm_artifact.tar
