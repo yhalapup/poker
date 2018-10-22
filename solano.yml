@@ -1,6 +1,6 @@
 plan:
 - first
-- second
+#- second
 
 #working_directory: /home/abc
 user: john
@@ -12,17 +12,17 @@ steps:
 
   first:
     script: bin/first
-    output:
-      - scm_artifact.tar
-      - fetch_compiled
+#    output:
+#      - scm_artifact.tar
+#      - fetch_compiled
 
   second:
     #working_directory: /home/abc_second
     uid: 3457
     script: bin/second
-    input:
-      - scm_artifact.tar
-      - fetch_compiled
+#    input:
+#      - scm_artifact.tar
+#      - fetch_compiled
     output:
     - fetch_compiled_second
 
