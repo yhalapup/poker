@@ -9,7 +9,7 @@ ls -l
 echo '=========    SHOW WORKING DIR'
 ls -l .
 
-sleep 10000
+# sleep 10000
 
 echo '=========    CREATE fetch_compiled_dir DIR and nested files'
 mkdir fetch_compiled_dir
