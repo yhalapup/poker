@@ -3,8 +3,8 @@ plan:
 #- second
 
 #working_directory: /home/abc
-user: john
-uid: 3456
+user: predixci
+#uid: 3456
 
 steps:
   fetch:
