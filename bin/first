@@ -3,6 +3,12 @@
 echo '=========    SHOW PWD:'
 pwd
 
+echo '=========    SHOW CURRENT USER:'
+whoami
+
+echo '=========    SHOW CURRENT USER UID:'
+echo $UID
+
 echo '=========    SHOW DIR'
 ls -l
 
