@@ -2,8 +2,8 @@ plan:
 - first
 #- second
 
-#working_directory: /home/abc
-user: johnny_funt
+working_directory: /home/john
+user: john
 uid: 3456
 
 steps:
