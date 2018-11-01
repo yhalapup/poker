@@ -1,10 +1,10 @@
 plan:
 - first
-#- second
+ second
 
 working_directory: /home/john
 user: john
-uid: 3456
+#uid: 3456
 
 steps:
   fetch:
@@ -23,8 +23,8 @@ steps:
 #    input:
 #      - scm_artifact.tar
 #      - fetch_compiled
-    output:
-    - fetch_compiled_second
+#    output:
+#    - fetch_compiled_second
 
 
     collect:
