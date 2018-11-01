@@ -15,8 +15,3 @@ steps:
   second:
     uid: 3457
     script: bin/second
-
-
-    collect:
-      repo:
-      - solano.yml
