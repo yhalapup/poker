@@ -1,6 +1,6 @@
 plan:
 - first
- second
+- second
 
 working_directory: /home/john
 user: john
