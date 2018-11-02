@@ -3,7 +3,7 @@ plan:
 - second
 
 working_directory: /home/john
-#user: john
+user: john
 
 steps:
   fetch:
