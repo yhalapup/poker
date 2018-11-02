@@ -9,6 +9,9 @@ whoami
 echo '=========    SHOW CURRENT USER UID:'
 echo $UID
 
+echo '=========    SHOW CURRENT USER GROUPS:'
+groups
+
 echo '=========    SHOW WORKING DIR'
 ls -l .
 
