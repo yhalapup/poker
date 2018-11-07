@@ -2,8 +2,8 @@ plan:
 - first
 - second
 
-working_directory: /home/john
-user: john
+working_directory: /home/predixci
+user: predixci
 
 steps:
   fetch:
@@ -13,5 +13,5 @@ steps:
     script: bin/first
 
   second:
-    uid: 3457
+#    uid: 3457
     script: bin/second
