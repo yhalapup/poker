@@ -11,11 +11,11 @@ steps:
 
   first:
     script: bin/first
-    input:
-      - fetch_compiled
+    output:
+    - fetch_compiled
 
   second:
 #    uid: 3457
-    output:
-      - fetch_compiled
+    input:
+    - fetch_compiled
     script: bin/second
