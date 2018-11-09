@@ -2,8 +2,9 @@ plan:
 - first
 - second
 
-working_directory: /home/predixci
-user: predixci
+working_directory: /home/john
+user: john
+uid: 3456
 
 steps:
   fetch:
