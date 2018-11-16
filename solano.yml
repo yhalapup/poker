@@ -2,7 +2,7 @@ plan:
 - first
 - second
 
-working_directory: /home/john
+working_directory: /home/john/testdir
 user: john
 uid: 3456
 
@@ -16,7 +16,7 @@ steps:
     - fetch_compiled
 
   second:
-#    uid: 3457
+    uid: 3457
     input:
     - fetch_compiled
     script: bin/second
