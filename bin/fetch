@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-echo '=========    SHOW PWD:'
-pwd
-
-echo '=========    CREATE ENVIRONMENT VARIABLES:'
-echo "ABC=test" >> /tmp/env
-echo "ABC_TEST=test2" >> /tmp/env

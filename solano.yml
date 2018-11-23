@@ -3,9 +3,6 @@ plan:
 - second
 
 steps:
-  fetch:
-    script: bin/fetch
-
   first:
     script: bin/first
     output:
