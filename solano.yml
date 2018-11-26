@@ -2,7 +2,7 @@ plan:
 - first
 - second
 
-working_directory: /home/predix/wd
+working_directory: /home/predixci/wd
 
 steps:
   first:
