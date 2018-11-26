@@ -2,6 +2,8 @@ plan:
 - first
 - second
 
+working_directory: /home/predix/wd
+
 steps:
   first:
     script: bin/first
