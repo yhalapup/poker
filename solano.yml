@@ -2,10 +2,10 @@ plan:
 - first
 - second
 
-steps:
-  fetch:
-    script: bin/fetch
+user: john
+uid: 3456
 
+steps:
   first:
     script: bin/first
     output:
