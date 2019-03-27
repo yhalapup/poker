@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo '=========    TEST'
+
+echo '=========    SHOW CURRENT PATH:'
+pwd
+
+echo '=========    SHOW CURRENT DIR:'
+ls -la
+
