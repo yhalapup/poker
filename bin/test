@@ -8,3 +8,19 @@ pwd
 echo '=========    SHOW CURRENT DIR:'
 ls -la
 
+
+echo 'START'
+sleep 10
+echo 'after 10 seconds'
+sleep 10
+echo 'after 20 seconds'
+sleep 10
+echo 'after 30 seconds'
+sleep 10
+echo 'after 40 seconds'
+sleep 10
+echo 'after 50 seconds'
+sleep 10
+echo 'END'
+
+
