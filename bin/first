@@ -3,6 +3,8 @@
 echo '=========    SHOW PWD:'
 pwd
 
+sleep 30
+
 echo '=========    SHOW DIR'
 ls -l
 
