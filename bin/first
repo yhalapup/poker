@@ -27,3 +27,5 @@ tar -cf scm_artifact.tar scm_artifact
 
 echo '=========    SHOW WORKING DIR again'
 ls -l .
+
+er
