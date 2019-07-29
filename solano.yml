@@ -14,10 +14,6 @@ edges:
   - b2-a0: c4-b1b2
   - b2-a0: c5-b2
 
-plan:
-- first
-- second
-
 steps:
   a0:
     script: bin/test
